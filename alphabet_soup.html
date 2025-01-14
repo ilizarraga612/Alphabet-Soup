@@ -1,0 +1,33 @@
+<!--Author: ISabelle Lizarraga
+    Description: HTML page for alphabet soup project.
+    implements the cs file and the js file.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alphabet Soup</title>
+  <link rel="stylesheet" href="alphabet_soup.css">
+</head>
+<body>
+  <div id="container">
+    <div id="sidebar">
+      <h1>Alphabet Soup</h1>
+      <label for="inputText">Enter Text:</label>
+      <input type="text" id="inputText" placeholder="Enter PlainText HERE: ">
+      <br>
+      <label for="shiftSlider">Shift: </label>
+      <input type="range" id="shiftSlider" min="0" max="26" value="0">
+      <span id="shiftValue">0</span>
+      <button id="updateSquare">Update Square</button>
+      <div id="cipherSquare"></div>
+    </div>
+    <div id="output">
+      <textarea id="caesarCipherOutput" readonly placeholder="Caesar Cipher"></textarea>
+      <textarea id="squareCipherOutput" readonly placeholder="Square Cipher"></textarea>
+    </div>
+  </div>
+  <script src="alphabet_soup.js"></script>
+</body>
+</html>
